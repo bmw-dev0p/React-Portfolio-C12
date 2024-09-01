@@ -1,6 +1,10 @@
+import './styles/contact.css';
+
+
 export default function Contact() {
     return (
-      <div>
+      <div className='bg'>
+        <div className='container'>
         <h1>Contact Page</h1>
         <p>
           Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
@@ -15,6 +19,7 @@ export default function Contact() {
           conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
           rhoncus. Etiam vel condimentum magna, quis tempor nulla.
         </p>
+      </div>
       </div>
     );
   }

@@ -29,12 +29,7 @@ html {
     font-weight: 700;
     color: white;
     /* margin: 25px 0 25px 25px; */
-  }
-  
-  
-  .self {
-    height: 75vh;
-    padding-left: 50px;
+    padding-bottom: 50px;
   }
   
   .medText {
@@ -42,12 +37,4 @@ html {
     font-weight: 500;
     color: white;
     /* margin: 25px 0; */
-  }
-  
-  .aboutMe {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    padding-top: 50px;
   }

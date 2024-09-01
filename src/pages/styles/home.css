@@ -36,23 +36,17 @@ h1, p {
   height: auto;
 }
 
-.git {
-  width: 12%;
-  height: auto;
-  padding-top: 200px;
-}
-
-.git:hover {
-  width: 13%;
-  height: auto;
-}
-
-.linkedIn {
-  width: 12%;
-  height: auto;
-}
-
 .logo {
+  width: 12%;
+  height: auto;
+  padding: 200px 20px;
+}
+
+.logo:hover {
+  opacity: 0.5;
+}
+
+.footer {
   display: flex !important;
   justify-content: center !important;
 }
