@@ -12,14 +12,10 @@ html {
   );
 }
 
-.home-section {
-  /* background-color: blue; */
-    /* position: relative; */
-    /* z-index: -1; */
+.bg {
     background-image: var(--image-gradient), url(../../assets/bg2.jpg);
-    /* background-position: top center; */
-    /* background-repeat: no-repeat; */
-    height: 2160px;
+    background-position: top center;
+    height: 100vh; 
     padding-bottom: 30px !important;
     padding-top: 30px !important;
   }
@@ -28,14 +24,58 @@ h1, p {
   color: white;
 }
 
-.bigName {
-  font-size: 100px;
+.bigText {
+  font-size: 80px;
   font-weight: 700;
   color: white;
-  margin: 45px 0;
+  /* margin: 25px 0 25px 25px; */
 }
 
 .coder {
-  width: 50%;
+  width: 55%;
   height: auto;
+}
+
+.git {
+  width: 12%;
+  height: auto;
+  padding-top: 200px;
+}
+
+.git:hover {
+  width: 13%;
+  height: auto;
+}
+
+.linkedIn {
+  width: 12%;
+  height: auto;
+}
+
+.logo {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.medText {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  /* margin: 25px 0; */
+}
+
+.heroBanner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-top: 100px;
+}
+
+.aboutMe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-top: 50px;
 }

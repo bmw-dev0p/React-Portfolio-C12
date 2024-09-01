@@ -1,6 +1,26 @@
-.temp {
-    background-color: purple;
+.header {
+    background-color: #1F0C2F;
     /* height: 100px; */
     display: flex;
     justify-content: flex-end;
+}
+
+.nav-link{
+    color: white !important;
+    border-bottom: none !important;
+}
+.nav-tabs {
+    border-bottom: none !important;
+}
+.nav-link.active {  
+    
+    background-color: #541C4C !important;
+}
+
+.nav-link.active:hover {
+    background-color: #A648DA !important;
+}
+
+.nav-link:hover {
+    background-color: #A648DA !important;
 }
