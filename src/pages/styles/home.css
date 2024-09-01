@@ -1,0 +1,41 @@
+html {
+  --section-background-color: linear-gradient(
+    to bottom left,
+    rgba(17, 16, 16, 0.582),
+    rgba(12, 8, 24, 0.904)
+  );
+
+  --image-gradient: linear-gradient(
+    to bottom left,
+    rgba(17, 16, 16, 0.678),
+    rgba(12, 10, 22, 0.863)
+  );
+}
+
+.home-section {
+  /* background-color: blue; */
+    /* position: relative; */
+    /* z-index: -1; */
+    background-image: var(--image-gradient), url(../../assets/bg2.jpg);
+    /* background-position: top center; */
+    /* background-repeat: no-repeat; */
+    height: 2160px;
+    padding-bottom: 30px !important;
+    padding-top: 30px !important;
+  }
+
+h1, p {
+  color: white;
+}
+
+.bigName {
+  font-size: 100px;
+  font-weight: 700;
+  color: white;
+  margin: 45px 0;
+}
+
+.coder {
+  width: 50%;
+  height: auto;
+}
