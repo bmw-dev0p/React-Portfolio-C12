@@ -1,0 +1,40 @@
+html {
+    --section-background-color: linear-gradient(
+      to bottom left,
+      rgba(17, 16, 16, 0.582),
+      rgba(12, 8, 24, 0.904)
+    );
+  
+    --image-gradient: linear-gradient(
+      to bottom left,
+      rgba(17, 16, 16, 0.678),
+      rgba(12, 10, 22, 0.863)
+    );
+  }
+  
+  .bg {
+      background-image: var(--image-gradient), url(../../assets/bg2.jpg);
+      background-position: top center;
+      height: 200vh; 
+      padding-bottom: 30px !important;
+      padding-top: 30px !important;
+    }
+  
+  h1, p {
+    color: white;
+  }
+  
+  .bigText {
+    font-size: 80px;
+    font-weight: 700;
+    color: white;
+    /* margin: 25px 0 25px 25px; */
+    padding-bottom: 50px;
+  }
+  
+  .medText {
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    /* margin: 25px 0; */
+  }
