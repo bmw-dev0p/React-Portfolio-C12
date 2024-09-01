@@ -7,7 +7,7 @@ function NavTabs() {
   const currentPage = useLocation().pathname;
 
   return (
-    <div class='temp'>
+    <div className='header'>
     <ul className="nav nav-tabs">
       <li className="nav-item">
         <Link

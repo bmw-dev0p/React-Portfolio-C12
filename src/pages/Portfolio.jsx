@@ -1,21 +1,52 @@
+import coder from '../assets/coder.png';
+import './styles/portfolio.css';
+
 export default function Portfolio() {
-    return (
-      <div>
-        <h1>Coding Project Portfolio</h1>
-        <p>
-          Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-          molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-          magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-          efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-          mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-          posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-          faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-          ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-          dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-          conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-          rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-        </p>
+  return (
+    <div className="bg">
+      <div className="container">
+        <h1 className="bigText" style={{ textAlign: 'center' }}>Coding Project Portfolio</h1>
+        {/* start row1 */}
+        <div className="row">
+          <div className="col">
+            <h2 className='medText'>Project 1</h2>
+            <p className='medText'>Description of Project 1</p>
+            <img className='col coder' src={coder} alt="Logo" />
+          </div>
+          <div className="col">
+            <h2 className='medText'>Project 2</h2>
+            <p className='medText'>Description of Project 2</p>
+            <img className='col coder' src={coder} alt="Logo" />
+          </div>
+          </div>
+          {/* start row2 */}
+          <div className="row">
+          <div className="col">
+            <h2 className='medText'>Project 3</h2>
+            <p className='medText'>Description of Project 3</p>
+            <img className='col coder' src={coder} alt="Logo" />
+          </div>
+          
+          <div className="col">
+            <h2 className='medText'>Project 4</h2>
+            <p className='medText'>Description of Project 4</p>
+            <img className='col coder' src={coder} alt="Logo" />
+          </div>
+        </div>
+        {/* start row2 */}
+        <div className="row">
+          <div className="col">
+            <h2 className='medText'>Project 5</h2>
+            <p className='medText'>Description of Project 5</p>
+            <img className='col coder' src={coder} alt="Logo" />
+          </div>
+          <div className="col">
+            <h2 className='medText'>Project 6</h2>
+            <p className='medText'>Description of Project 6</p>
+            <img className='col coder' src={coder} alt="Logo" />
+          </div>
+        </div>
       </div>
-    );
-  }
-  
+    </div>
+  );
+}
