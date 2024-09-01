@@ -15,7 +15,7 @@ html {
   .bg {
       background-image: var(--image-gradient), url(../../assets/bg2.jpg);
       background-position: top center;
-      height: 100vh; 
+      height: 200vh; 
       padding-bottom: 30px !important;
       padding-top: 30px !important;
     }

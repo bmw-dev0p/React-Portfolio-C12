@@ -25,9 +25,9 @@ export default function Home() {
             </div>
             <img className='col coder' src={coder} alt="Logo" />
         </div>
-        <div className='row logo'>
-          <img className='git' src={git} alt="gitHub" />
-          <img className='git' src={linked} alt="linkedIn" />
+        <div className='row footer'>
+          <img className='logo' src={git} alt="gitHub" />
+          <img className='logo' src={linked} alt="linkedIn" />
         </div>
       </div>
     </div>
