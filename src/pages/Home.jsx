@@ -11,7 +11,7 @@ export default function Home() {
         <div className="row heroBanner">
           <div className="col">
             <h2 className='medText'>Hello, I'm</h2>
-            <h1 className= 'bigText'>Brad Webster</h1>
+            <h1 className= 'bigText'><span className='purple'>&lt;Brad/&gt;</span> Webster</h1>
             <p className='medText'>
               A passionate student studying to become a
               <Typewriter

@@ -50,4 +50,100 @@ html {
     align-items: center;
     height: 100%;
     padding-top: 50px;
+    
   }
+
+  #gh {
+  width: 100% !important; /* Full width of its container */
+  height: 300px; /* Adjust the height as needed */
+  border: 1px solid #ddd; /* Optional: add border to the container */
+  border-radius: 8px; /* Optional: add rounded corners */
+  margin-top: 20px; /* Add some space above the graph */
+}
+
+.github-streak {
+  width: 100%; /* Full width of its container */
+  height: auto; /* Adjust the height automatically */
+  max-width: 800px; /* Maximum width */
+  border: 1px solid #ddd; /* Optional: add border */
+  border-radius: 8px; /* Optional: add rounded corners */
+  margin-top: 20px; /* Add some space above the streak graph */
+}
+
+/* SKILL BARS  */
+.skill-row {
+  margin-top: 40px; /* Adjust spacing between rows */
+}
+
+.skill-bars {
+  margin-top: 20px;
+}
+
+.skill-bar {
+  margin-bottom: 20px;
+}
+
+.skill-label {
+  font-size: 18px;
+  color: white;
+}
+
+.bar {
+  background: #333;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 30px;
+  margin-top: 5px;
+}
+
+.progress {
+  background: #4CAF50; /* Green color for progress */
+  height: 100%;
+}
+
+.skill-circles {
+  margin-top: 20px;
+}
+
+.skill-circle {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.framework-label {
+  font-size: 18px;
+  color: white;
+}
+
+.circle {
+  width: 120px; /* Increase size */
+  height: 120px; /* Increase size */
+  border-radius: 50%;
+  background: #333;
+  margin: 0 auto;
+  position: relative;
+}
+
+.circle::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%; /* Increase size of inner circle */
+  height: 80%; /* Increase size of inner circle */
+  border-radius: 50%;
+  background: #111;
+  transform: translate(-50%, -50%);
+}
+
+/* keyframes for filling the bar  */
+@keyframes fillBar {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+
+.skill-bar .progress {
+  animation: fillBar 2s ease-out;
+  transition: width 2s ease-out;
+}
+
