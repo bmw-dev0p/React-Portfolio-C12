@@ -52,13 +52,13 @@ export default function Portfolio() {
 
   return (
     <div className="bg">
-      <div className="container">
-        <h1 className="bigText" style={{ textAlign: 'center' }}>Coding Project Portfolio</h1>
-        <div className="row">
+      <div className="container-fluid">  {/* Change to container-fluid */}
+        <h1 className="bigText" style={{ textAlign: 'center' }}><span className='purple'>&lt;Coding/&gt;</span> Project Portfolio</h1>
+        <div className="row ofCards">  {/* Center the row contents */}
           {/* begin card map  */}
           {projects.map((project, index) => (
-            <div className="col-md-6 mb-4" key={index}>
-              <div className="card custom-card">
+            <div className="col-lg-4 col-md-6 mb-4" key={index}>  {/* Adjust column classes */}
+              <div className="card custom-card" style={{ minWidth: '18rem' }}>  {/* Set minimum width */}
                 <img src={project.imgSrc} className="card-img-top" alt={project.title} />
                 <div className="card-body">
                   <h5 className="card-title">{project.title}</h5>
@@ -77,8 +77,6 @@ export default function Portfolio() {
                 </div>
               </div>
             </div>
-
-
           ))}
         </div>
       </div>

@@ -25,11 +25,10 @@ html {
   }
   
   .bigText {
-    font-size: 80px;
+    font-size: 70px !important;
     font-weight: 700;
     color: white;
     /* margin: 25px 0 25px 25px; */
-    padding-bottom: 50px;
   }
   
   .medText {
@@ -38,3 +37,104 @@ html {
     color: white;
     /* margin: 25px 0; */
   }
+
+  .container {
+    margin-left: 25% !important; 
+  }
+
+  .imgStyle {
+    max-width: 100%;
+    height: 600px;
+    width: 1500px;
+  }
+  
+  .moveDown {
+    margin-top: 100px;
+    align-items: center;
+    /* justify-content: space-around; */
+    width:max-content !important;
+  }
+  
+  .custom {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(128, 0, 128, 0.6);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+  .purple {
+    color: rebeccapurple;
+  }
+  
+
+
+  /* imported button */
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 25px;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
