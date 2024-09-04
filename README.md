@@ -21,12 +21,8 @@ I was motivated to create a portfolio for myself to display all the coding proje
   <br/>Step 7: Enjoy the portfolio !
 
 ## Usage:
-  Application landing page + navigation
-  <br/>![startup](https://github.com/bmw-dev0p/Employee-DB-Challenge10/blob/feature/v5/assets/1.jpg?raw=true)
-  <br/>View all employees function (view deparments and roles will look similar)
-  <br/>![viewAll](https://github.com/bmw-dev0p/Employee-DB-Challenge10/blob/feature/v5/assets/2.jpg?raw=true)
-  <br/>Add employee function (Add departments and roles will look similar)
-  <br/>![addEmployee](https://github.com/bmw-dev0p/Employee-DB-Challenge10/blob/feature/v5/assets/3.jpg?raw=true)
+  Wepage home + navigation top right
+  <br/>![home](https://github.com/bmw-dev0p/React-Portfolio-C12/blob/main/src/assets/usage1.jpg?raw=true)
 
 ## Features:
 ### Coding Language(s): 
