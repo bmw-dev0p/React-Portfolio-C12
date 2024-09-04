@@ -1,5 +1,5 @@
 .header {
-    background-color: #1F0C2F;
+    background-image: var(--image-gradient), url(../assets/bg2.jpg);
     /* height: 100px; */
     display: flex;
     justify-content: flex-end;
