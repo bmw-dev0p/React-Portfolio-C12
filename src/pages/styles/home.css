@@ -15,7 +15,7 @@ html {
 .bg {
     background-image: var(--image-gradient), url(../../assets/bg2.jpg);
     background-position: top center;
-    height: 100vh; 
+    height: 125vh; 
     padding-bottom: 30px !important;
     padding-top: 30px !important;
   }
@@ -24,35 +24,21 @@ h1, p {
   color: white;
 }
 
-.bigText {
-  font-size: 80px;
+.bigTextHome {
+  font-size: 90px;
   font-weight: 700;
   color: white;
   /* margin: 25px 0 25px 25px; */
 }
 
 .coder {
-  width: 55%;
-  height: auto;
+  width: auto;
+  height: 70vh;
 }
 
-.logo {
-  width: 12%;
-  height: auto;
-  padding: 200px 20px;
-}
 
-.logo:hover {
-  opacity: 0.5;
-}
-
-.footer {
-  display: flex !important;
-  justify-content: center !important;
-}
-
-.medText {
-  font-size: 20px;
+.medTextHome {
+  font-size: 50px;
   font-weight: 500;
   color: white;
   /* margin: 25px 0; */

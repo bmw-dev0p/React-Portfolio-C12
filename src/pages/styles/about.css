@@ -15,7 +15,7 @@ html {
   .bg {
       background-image: var(--image-gradient), url(../../assets/bg2.jpg);
       background-position: top center;
-      height: 200vh; 
+      height: 125vh; 
       padding-bottom: 30px !important;
       padding-top: 30px !important;
     }
@@ -33,7 +33,7 @@ html {
   
   
   .self {
-    height: 75vh;
+    height: 50vh;
     padding-left: 50px;
   }
   
@@ -53,9 +53,13 @@ html {
     
   }
 
+  .graph {
+    align-items: center !important;
+  }
+
   #gh {
-  width: 100% !important; /* Full width of its container */
-  height: 300px; /* Adjust the height as needed */
+  width: 800px !important; /* Full width of its container */
+  height: auto; /* Adjust the height as needed */
   border: 1px solid #ddd; /* Optional: add border to the container */
   border-radius: 8px; /* Optional: add rounded corners */
   margin-top: 20px; /* Add some space above the graph */
@@ -69,6 +73,8 @@ html {
   border-radius: 8px; /* Optional: add rounded corners */
   margin-top: 20px; /* Add some space above the streak graph */
 }
+
+
 
 /* SKILL BARS  */
 .skill-row {
@@ -101,42 +107,8 @@ html {
   height: 100%;
 }
 
-.skill-circles {
-  margin-top: 20px;
-}
 
-.skill-circle {
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.framework-label {
-  font-size: 18px;
-  color: white;
-}
-
-.circle {
-  width: 120px; /* Increase size */
-  height: 120px; /* Increase size */
-  border-radius: 50%;
-  background: #333;
-  margin: 0 auto;
-  position: relative;
-}
-
-.circle::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 80%; /* Increase size of inner circle */
-  height: 80%; /* Increase size of inner circle */
-  border-radius: 50%;
-  background: #111;
-  transform: translate(-50%, -50%);
-}
-
-/* keyframes for filling the bar  */
+/* keyframes for filling the skill bar  */
 @keyframes fillBar {
   from { width: 0%; }
   to { width: 100%; }
@@ -147,3 +119,114 @@ html {
   transition: width 2s ease-out;
 }
 
+/* SKILL CIRCLES */
+.skill-circles {
+  margin-top: 40px; /* Increase the margin on top */
+  margin-bottom: 40px; /* Add margin on bottom */
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.skill-circle {
+  margin-bottom: 60px; /* Increase the margin on bottom */
+  text-align: center;
+}
+
+.circle {
+  width: 200px; /* Increase the width */
+  height: 200px; /* Increase the height */
+  border-radius: 50%;
+  background: conic-gradient(#4CAF50 0% 0%, #4CAF50 0% var(--fill-percentage), #333 var(--fill-percentage) 100%);
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fillCircle 2s ease-out forwards;
+  /* --fill-percentage: 0%; */
+}
+
+.circle::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 85%;
+  height: 85%;
+  border-radius: 50%;
+  background: #111;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.percentage {
+  position: absolute;
+  color: white;
+  font-size: 18px;
+  z-index: 2;
+}
+
+.framework-label {
+  color: white;
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  z-index: 2;
+}
+
+@keyframes fillCircle {
+  0% {
+    --fill-percentage: 0%;
+  }
+  6.25% {
+    --fill-percentage: calc(var(--percentage) / 16);
+  }
+  12.5% {
+    --fill-percentage: calc(var(--percentage) / 8);
+  }
+  18.75% {
+    --fill-percentage: calc(var(--percentage) * 0.1875);
+  }
+  25% {
+    --fill-percentage: calc(var(--percentage) / 4);
+  }
+  31.25% {
+    --fill-percentage: calc(var(--percentage) * 0.3125);
+  }
+  37.5% {
+    --fill-percentage: calc(var(--percentage) * 0.375);
+  }
+  43.75% {
+    --fill-percentage: calc(var(--percentage) * 0.4375);
+  }
+  50% {
+    --fill-percentage: calc(var(--percentage) / 2);
+  }
+  56.25% {
+    --fill-percentage: calc(var(--percentage) * 0.5625);
+  }
+  62.5% {
+    --fill-percentage: calc(var(--percentage) * 0.625);
+  }
+  68.75% {
+    --fill-percentage: calc(var(--percentage) * 0.6875);
+  }
+  75% {
+    --fill-percentage: calc(var(--percentage) * 0.75);
+  }
+  81.25% {
+    --fill-percentage: calc(var(--percentage) * 0.8125);
+  }
+  87.5% {
+    --fill-percentage: calc(var(--percentage) * 0.875);
+  }
+  93.75% {
+    --fill-percentage: calc(var(--percentage) * 0.9375);
+  }
+  100% {
+    --fill-percentage: var(--percentage);
+  }
+}
