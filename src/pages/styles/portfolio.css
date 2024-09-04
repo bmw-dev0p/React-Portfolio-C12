@@ -13,7 +13,7 @@ html {
 }
 
 .bg {
-    background-image: var(--image-gradient), url(../../assets/bg2.jpg);
+    /* background-image: var(--image-gradient), url(../../assets/bg2.jpg); */
     background-position: top center;
     height: 125vh; 
     padding-bottom: 30px !important;

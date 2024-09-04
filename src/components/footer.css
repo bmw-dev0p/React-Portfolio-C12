@@ -1,8 +1,7 @@
 .footer-container {
-  background-image:url(../assets/bgFooter.jpg);
-  background-position: top center;
-  background-size: cover; /* Ensures the background image covers the entire element */
-  background-repeat: no-repeat;
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  /* background-size: cover; Ensures the background image covers the entire element */
+  /* background-repeat: no-repeat; */
   height: 200px;
   display: flex;
   justify-content: center;
