@@ -19,7 +19,7 @@ html {
       padding-bottom: 30px !important;
       padding-top: 30px !important;
     }
-  
+
   h1, p {
     color: white;
   }
@@ -38,3 +38,18 @@ html {
     color: white;
     /* margin: 25px 0; */
   }
+
+  .resume-images {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 50px; /* Add some space between the images */
+    margin-top: 50px; /* Add space between the text and images */
+  }
+  
+  .resume-img {
+    width: 45%; /* Each image takes up 45% of the container width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Rounded corners */
+  }
+  
