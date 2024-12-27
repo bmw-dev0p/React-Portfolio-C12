@@ -48,19 +48,22 @@ h1, p {
   flex-direction: column; /* Ensure card contents stretch to fill the card */
   padding: 20px; /* Add padding to card contents */
   box-shadow: 0 4px 8px rgba(128, 0, 128, 0.6); /* Purple shadow */
-  transition: box-shadow 0.3s ease-in-out; /* Smooth transition for shadow */
+  transition: box-shadow 0.3s ease-in-out, transform 0.2s; /* Add scale effect on hover */
+  max-width: 600px; /* Wider cards for larger screens */
+  width: 100%; /* Full width for responsive design */
 }
 
 .card.custom-card:hover {
-  background-color: rgba(0, 0, 0, 0.7); /* Darken background on hover */
-  box-shadow: 0 8px 16px rgba(128, 0, 128, 0.8); /* Enhanced purple shadow on hover */
+  background-color: rgba(0, 0, 0, 0.7); /* Slightly darker on hover */
+  box-shadow: 0 8px 16px rgba(128, 0, 128, 0.8); /* Stronger shadow on hover */
+  transform: scale(1.05); /* Slight zoom on hover */
 }
-
 
 .card-img-top {
   width: 100%;
-  height: 300px; /* Fixed height for uniformity */
-  object-fit: cover; /* Resize image to cover area without distortion */
+  height: 200px; /* Uniform height for all images */
+  object-fit: cover; /* Ensures proper cropping */
+  border-radius: 10px; /* Optional: rounded corners for images */
 }
 
 .card-img-top:hover {
@@ -68,12 +71,13 @@ h1, p {
 }
 
 .card-body {
+  text-align: center;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  flex-grow: 1; /* Ensure body takes up remaining space */
+  justify-content: space-between; /* Distributes content evenly */
 }
+
 
 .card-title, .card-text {
   margin: 0;
@@ -88,9 +92,9 @@ h1, p {
 
 .button-container {
   display: flex;
-  justify-content: center;
-  gap: 10px; /* Space between the buttons */
-  margin-top: 15px; /* Space above the buttons */
+  justify-content: space-evenly; /* Buttons spread evenly */
+  gap: 10px;
+  margin-top: 15px;
 }
 
 .btn {
@@ -114,7 +118,8 @@ h1, p {
 
 .ofCards {
   justify-content: center;
-  padding:0 400px;
+  gap: 20px; /* Add spacing between cards */
+  padding: 0 50px; /* Reduce large padding to allow for wider cards */
 }
 
 
@@ -186,3 +191,24 @@ h1, p {
   border-radius: 10px;
 }
 
+/* responsive design  */
+@media (max-width: 1200px) {
+  .card.custom-card {
+    max-width: 300px; /* Slightly smaller cards for mid-sized screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .ofCards {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center-align the stacked cards */
+  }
+
+  .card.custom-card {
+    max-width: 90%; /* Take up most of the screen width on small screens */
+  }
+
+  .card-img-top {
+    height: 180px; /* Adjust image height for smaller screens */
+  }
+}

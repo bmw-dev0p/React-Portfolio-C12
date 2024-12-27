@@ -5,10 +5,26 @@ import empDB from '../assets/empDB2.jpg';
 import VBuilder from '../assets/VBuilder2.png';
 import RMG from '../assets/RMG.png';
 import gitWhite from '../assets/gitWhite.png';
+import bananaflix from '../assets/bananaFlix.jpg';
+import pilotLogo from '../assets/pilotLogo.png';
 import './styles/portfolio.css';
 
 export default function Portfolio() {
   const projects = [
+    {
+      title: 'BananaFlix',
+      imgSrc: bananaflix,
+      description: 'Movie Database application that allows users to search, save, and rate movies. Features include ai chatbot movie recommendations, user authentication, dynamic rendering of movie data, and a responsive design.',
+      githubLink: 'https://github.com/bmw-dev0p/BananaFlix',
+      demoLink: 'https://bananaflix.onrender.com/',
+    },
+    {
+      title: 'Project Pilot',
+      imgSrc: pilotLogo,
+      description: 'Collaborative project management application that allows users to create, assign, and track tasks. Features include user authentication, task status updates, and a responsive design.',
+      githubLink: 'https://github.com/bmw-dev0p/Project-Pilot',
+      demoLink: 'https://project-pilot-1.onrender.com',
+    },
     {
       title: 'Weather API Dashboard',
       imgSrc: wD,

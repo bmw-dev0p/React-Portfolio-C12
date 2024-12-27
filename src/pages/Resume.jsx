@@ -6,12 +6,14 @@ export default function Resume() {
   return (
     <div className='bg'>
       <div className="container">
+        <div className='resume-text'>
         <h1 className='bigText'>Resume</h1>
-        <p className='medText'>
+        <p className='medText align'>
           Click 
           <a href="/path-to-your-resume.pdf" download className='purple'>&lt;here/&gt;</a> 
           to download my Resume
         </p>
+        </div>
 
         <div className="resume-images">
           <img src={resume1} alt="Resume page 1" className="resume-img" />

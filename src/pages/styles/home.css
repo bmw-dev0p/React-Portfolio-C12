@@ -4,59 +4,111 @@ html {
     rgba(17, 16, 16, 0.582),
     rgba(12, 8, 24, 0.904)
   );
-
-  --image-gradient: linear-gradient(
-    to bottom left,
-    rgba(17, 16, 16, 0.678),
-    rgba(12, 10, 22, 0.863)
-  );
 }
 
 .bg {
-    /* background-image: var(--image-gradient), url(../../assets/bg2.jpg); */
-    background-position: top center;
-    height: 125vh; 
-    padding-bottom: 30px !important;
-    padding-top: 30px !important;
-  }
-
-h1, p {
-  color: white;
+  background-position: center;
+  min-height: 100% !important;
+  height: auto !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
 }
 
-.bigTextHome {
-  font-size: 90px;
-  font-weight: 700;
-  color: white;
-  /* margin: 25px 0 25px 25px; */
-}
-
-.coder {
-  width: auto;
-  height: 60vh;
-}
-
-
-.medTextHome {
-  font-size: 50px;
-  font-weight: 500;
-  color: white;
-  /* margin: 25px 0; */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  width: 90%;
+  min-height: 100% !important;
+  height: auto !important;
 }
 
 .heroBanner {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  padding-top: 100px;
-  width:max-content !important;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  justify-content: space-between;
+  width: 100%;
 }
 
-.aboutMe {
+.textCol {
+  /* flex: 1 1 50%; */
+  max-width: 600px;
+  text-align: left;
+  padding-top: 10%;
+}
+
+.imageCol {
+  /* flex: 1 1 50%; */
+  max-width: 600px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100%;
-  padding-top: 50px;
+}
+
+.coder {
+  width: auto;
+  height: 60vh; /* Makes the image responsive */
+  max-height: 500px; /* Restricts height for smaller screens */
+  object-fit: cover; /* Keeps proportions intact */
+}
+
+.bigTextHome {
+  font-size: 3.5vw; /* Scales dynamically with screen width */
+  font-weight: 700;
+  color: white;
+}
+
+.medTextHome {
+  font-size: 2vw; /* Scales dynamically with screen width */
+  font-weight: 500;
+  color: white;
+}
+
+.purple {
+  color: rebeccapurple;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .heroBanner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .textCol,
+  .imageCol {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .bigTextHome {
+    font-size: 6vw;
+  }
+
+  .medTextHome {
+    font-size: 4vw;
+  }
+
+  .coder {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bigTextHome {
+    font-size: 7vw;
+  }
+
+  .medTextHome {
+    font-size: 5vw;
+  }
+
+  .coder {
+    max-height: 200px;
+  }
 }

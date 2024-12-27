@@ -4,13 +4,14 @@ import Typewriter from 'typewriter-effect';
 
 export default function Home() {
   return (
-    <div className="bg" >
+    <div className="bg">
       <div className="container">
-        <div className="row heroBanner">
-          <div className="col">
-            <h2 className='medTextHome'>Hello, I'm</h2>
-            <h1 className= 'bigTextHome'><span className='purple'>&lt;Brad/&gt;</span> Webster</h1>
-            <p className='medTextHome'>
+        <div className="heroBanner">
+          {/* Text Column */}
+          <div className="col textCol">
+            <h2 className="medTextHome">Hello, I'm</h2>
+            <h1 className="bigTextHome"><span className="purple">&lt;Brad/&gt;</span> Webster</h1>
+            <p className="medTextHome">
               A passionate student studying to become a
               <Typewriter
                 options={{
@@ -20,8 +21,11 @@ export default function Home() {
                 }}
               />
             </p>
-            </div>
-            <img className='col coder' src={coder} alt="Logo" />
+          </div>
+          {/* Image Column */}
+          <div className="col imageCol">
+            <img className="coder" src={coder} alt="Logo" />
+          </div>
         </div>
       </div>
     </div>

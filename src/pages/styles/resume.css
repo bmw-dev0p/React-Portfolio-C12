@@ -29,7 +29,7 @@ html {
     font-weight: 700;
     color: white;
     /* margin: 25px 0 25px 25px; */
-    padding-bottom: 50px;
+    padding-bottom: 10px !important;
   }
   
   .medText {
@@ -37,6 +37,14 @@ html {
     font-weight: 500;
     color: white;
     /* margin: 25px 0; */
+  }
+
+  .resume-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;  
   }
 
   .resume-images {
