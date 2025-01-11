@@ -58,7 +58,7 @@ html {
 }
 
 .bigTextHome {
-  font-size: 3.5vw; /* Scales dynamically with screen width */
+  font-size: 2.5vw; /* Scales dynamically with screen width */
   font-weight: 700;
   color: white;
 }

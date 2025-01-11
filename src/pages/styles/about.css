@@ -57,21 +57,25 @@ html {
     align-items: center !important;
   }
 
-  #gh {
-  width: 800px !important; /* Full width of its container */
-  height: auto; /* Adjust the height as needed */
-  border: 1px solid #ddd; /* Optional: add border to the container */
-  border-radius: 8px; /* Optional: add rounded corners */
-  margin-top: 20px; /* Add some space above the graph */
-}
-
-.github-streak {
+.github-contributions, .github-streak {
   width: 100%; /* Full width of its container */
   height: auto; /* Adjust the height automatically */
   max-width: 800px; /* Maximum width */
   border: 1px solid #ddd; /* Optional: add border */
   border-radius: 8px; /* Optional: add rounded corners */
   margin-top: 20px; /* Add some space above the streak graph */
+}
+
+.github-calendar {
+  margin-top: 1rem;
+  max-width: 800px; /* Set a maximum width */
+  width: 100%;
+  height: auto;
+  margin-left: auto; /* Centers the calendar horizontally */
+  margin-right: auto; /* Centers the calendar horizontally */
+  display: block; /* Ensures the iframe is treated as a block element */
+  border: 1px solid #ddd; /* Optional: border for better visibility */
+  border-radius: 8px; /* Optional: rounded corners */
 }
 
 

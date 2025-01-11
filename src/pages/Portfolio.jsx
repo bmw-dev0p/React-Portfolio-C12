@@ -7,6 +7,8 @@ import RMG from '../assets/RMG.png';
 import gitWhite from '../assets/gitWhite.png';
 import bananaflix from '../assets/bananaFlix.jpg';
 import pilotLogo from '../assets/pilotLogo.png';
+import gBooks from '../assets/gBooks.jpg';
+import kanban from '../assets/kanban.jpg';
 import './styles/portfolio.css';
 
 export default function Portfolio() {
@@ -26,11 +28,25 @@ export default function Portfolio() {
       demoLink: 'https://project-pilot-1.onrender.com',
     },
     {
+      title: 'Google Books Search',
+      imgSrc: gBooks,
+      description: 'Google Books API search application that allows users to search, save, and view books. Features include user authentication, dynamic rendering of book data, and a responsive design.',
+      githubLink: 'https://github.com/bmw-dev0p/Google-Books-C18',
+      demoLink: 'https://google-books-c18.onrender.com/',
+    },
+    {
       title: 'Weather API Dashboard',
       imgSrc: wD,
       description: 'Integrated Weather application using OpenWeather API. Provides real-time weather data for any city in the world. Features include current weather, 5-day forecast, and search history.',
       githubLink: 'https://github.com/bmw-dev0p/Weather-Dash-Challenge9',
       demoLink: 'https://weather-dash-challenge9.onrender.com',
+    },
+    {
+      title: 'Kanban Board',
+      imgSrc: kanban,
+      description: 'Kanban board application that allows users to create, edit, and delete tasks in productivity columns. Features include user authenitcation, task status updates, and a responsive design.',
+      githubLink: 'https://github.com/bmw-dev0p/Kanban-Board-C14',
+      demoLink: 'https://kanban-board-c14.onrender.com/',
     },
     {
       title: 'My First Blog',

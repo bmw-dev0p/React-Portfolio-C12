@@ -11,7 +11,7 @@ const Footer = () => {
           <a href="https://github.com/bmw-dev0p" target="_blank" rel="noopener noreferrer">
             <img className='logo' src={git} alt="GitHub" />
           </a>
-          <a href="https://www.linkedin.com/in/your-linkedin-profile/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/brad-webster-098b67338/" target="_blank" rel="noopener noreferrer">
             <img className='logo' src={linked} alt="LinkedIn" />
           </a>
         </div>

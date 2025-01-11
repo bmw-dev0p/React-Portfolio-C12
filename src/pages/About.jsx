@@ -4,43 +4,43 @@ import self from '../assets/selfplosion.png';
 
 // Function to load GitHub contributions graph and streak stats
 function GitHubGraphs() {
-  useEffect(() => {
-    // Load CSS
-    const link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = 'http://lengthylyova.pythonanywhere.com/static/gh-contrib-graph/gh.css';
-    document.head.appendChild(link);
-
-    // Load JS
-    const script = document.createElement('script');
-    script.src = 'http://lengthylyova.pythonanywhere.com/static/gh-contrib-graph/gh.js';
-    script.async = true;
-    document.body.appendChild(script);
-
-    // Cleanup function
-    return () => {
-      document.head.removeChild(link);
-      document.body.removeChild(script);
-    };
-  }, []);
-
   return (
     <div className="row graphs">
       <div className="col text-center">
         <h2 className="medText mt-4">GitHub Contributions</h2>
-        <div id="gh" data-login="bmw-dev0p"></div>
+        <img
+          src="https://github-readme-stats.vercel.app/api?username=bmw-dev0p&show_icons=true&theme=radical"
+          alt="GitHub Contributions"
+          className="github-contributions"
+        />
       </div>
-      <div className='col text-center'>
+      <div className="col text-center">
         <h2 className="medText mt-4">GitHub Streak Stats</h2>
         <img
-          src="https://github-readme-streak-stats.herokuapp.com/?user=bmw-dev0p"
+          src="https://github-readme-streak-stats.herokuapp.com/?user=bmw-dev0p&theme=radical"
           alt="GitHub Streak Stats"
           className="github-streak"
         />
       </div>
+      <div className="col-12 text-center">
+        <h2 className="medText mt-4">GitHub Contributions Calendar</h2>
+        <iframe
+          src="https://ghchart.rshah.org/bmw-dev0p"
+          title="GitHub Contributions Calendar"
+          className="github-calendar"
+          style={{
+            border: "none",
+            width: "100%",
+            height: "200px",
+            overflow: "hidden",
+          }}
+        ></iframe>
+      </div>
     </div>
   );
 }
+
+
 
 // Function to render Skill Bars and Circles
 function SkillBarsAndCircles() {
