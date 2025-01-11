@@ -1,25 +1,25 @@
-html {
-  --section-background-color: linear-gradient(
-    to bottom left,
-    rgba(17, 16, 16, 0.582),
-    rgba(12, 8, 24, 0.904)
-  );
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 .bg {
-  background-position: center;
-  min-height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures the footer stays at the bottom */
+  min-height: 100vh;
+  background-position: center;
 }
 
 .container {
+  flex: 1; /* Ensures the container takes up available space */
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   width: 90%;
   max-width: 1200px;
+  margin: 20px auto; /* Optional: center the container */
 }
 
 .row {
@@ -30,56 +30,56 @@ html {
   width: 100%;
 }
 
-  .imageCol {
-    flex: 1 1 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 600px;
+.imageCol {
+  flex: 1 1 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+}
+
+.imgStyle {
+  max-width: 100%;
+  height: auto;
+}
+
+.formCol {
+  flex: 1 1 50%;
+  max-width: 600px;
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(128, 0, 128, 0.6);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .imageCol,
+  .formCol {
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 
   .imgStyle {
-    max-width: 100%;
-    height: auto;
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bigText {
+    font-size: 40px !important;
   }
 
-  .formCol {
-    flex: 1 1 50%;
-    max-width: 600px;
+  .imgStyle {
+    max-height: 200px;
   }
-
-  .card {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(128, 0, 128, 0.6);
-    transition: box-shadow 0.3s ease-in-out;
-  }
-
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .row {
-      flex-direction: column;
-    }
-
-    .imageCol,
-    .formCol {
-      flex: 1 1 100%;
-      max-width: 100%;
-    }
-
-    .imgStyle {
-      max-height: 300px;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .bigText {
-      font-size: 40px !important;
-    }
-
-    .imgStyle {
-      max-height: 200px;
-    }
-  }
+}
