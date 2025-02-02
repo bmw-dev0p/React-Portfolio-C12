@@ -64,7 +64,7 @@ html {
 }
 
 .medTextHome {
-  font-size: 2vw; /* Scales dynamically with screen width */
+  font-size: 175%;
   font-weight: 500;
   color: white;
 }

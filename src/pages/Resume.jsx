@@ -1,6 +1,8 @@
 import './styles/resume.css';
 import resume1 from '../assets/resume1.jpg';
 import resume2 from '../assets/resume2.jpg';
+import resumePDF from '../assets/RESUME_2025.pdf';
+
 
 export default function Resume() {
   return (
@@ -10,7 +12,7 @@ export default function Resume() {
         <h1 className='bigText'>Resume</h1>
         <p className='medText align'>
           Click 
-          <a href="/path-to-your-resume.pdf" download className='purple'>&lt;here/&gt;</a> 
+          <a href={resumePDF} download className='purple'>&lt;here/&gt;</a> 
           to download my Resume
         </p>
         </div>

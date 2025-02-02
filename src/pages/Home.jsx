@@ -13,14 +13,17 @@ export default function Home() {
             <h1 className="bigTextHome"><span className="purple">&lt;Brad/&gt;</span> Webster</h1>
             <p className="medTextHome">
               A passionate student studying to become a
-              <Typewriter
+              
+            </p>
+            <h1 className="bigTextHome"><span className="purple">
+            <Typewriter
                 options={{
                   strings: ['Software Developer', 'Web Developer', 'React Developer', 'Full Stack Developer'],
                   autoStart: true,
                   loop: true,
                 }}
-              />
-            </p>
+              /></span>
+              </h1>
           </div>
           {/* Image Column */}
           <div className="col imageCol">
