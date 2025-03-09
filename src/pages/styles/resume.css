@@ -11,14 +11,6 @@ html {
       rgba(12, 10, 22, 0.863)
     );
   }
-  
-  .bg {
-      /* background-image: var(--image-gradient), url(../../assets/bg2.jpg); */
-      background-position: top center;
-      height: 125vh; 
-      padding-bottom: 30px !important;
-      padding-top: 30px !important;
-    }
 
   h1, p {
     color: white;

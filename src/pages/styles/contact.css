@@ -4,14 +4,6 @@ html, body {
   height: 100%;
 }
 
-.bg {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* Ensures the footer stays at the bottom */
-  min-height: 100vh;
-  background-position: center;
-}
-
 .container {
   flex: 1; /* Ensures the container takes up available space */
   display: flex;

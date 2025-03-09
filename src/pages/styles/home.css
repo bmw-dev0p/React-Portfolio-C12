@@ -6,16 +6,6 @@ html {
   );
 }
 
-.bg {
-  background-position: center;
-  min-height: 100% !important;
-  height: auto !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 30px 0;
-}
-
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -96,6 +86,14 @@ html {
 
   .coder {
     max-height: 300px;
+  }
+
+  .bigText {
+    font-size: 6vw;
+  }
+
+  .medText {
+    font-size: 4vw;
   }
 }
 

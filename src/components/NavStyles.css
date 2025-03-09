@@ -14,17 +14,21 @@
     padding-left: 20px;
 }
 .nav-tabs {
-    border-bottom: none !important;
-    height: 100%;
-}
+    display: flex;
+    justify-content: flex-end; /* Aligns tabs to the right */
+    width: 100%;
+    padding: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  .nav-item {
+    flex: 0 1; /* Prevents nav items from stretching */
+    text-align: center;
+  }
+  
+  
 
-.nav-item {
-    height: 100%;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* padding: 0 20px; */
-}
+  
 .nav-link.active {  
     
     background-image: url(../assets/navActive.jpg);
@@ -37,3 +41,16 @@
 .nav-link:hover {
     background-color: #A648DA !important;
 }
+/* mobile  */
+@media (max-width: 768px) {
+    .nav-tabs {
+      justify-content: space-around; /* Distributes tabs evenly across small screens */
+      flex-wrap: nowrap; /* Ensures tabs stay in a single row */
+      overflow-x: auto; /* Allows horizontal scrolling if absolutely necessary */
+    }
+  
+    .nav-item {
+      flex: 1; /* Ensures tabs shrink/grow as needed */
+      min-width: auto; /* Prevents unnecessary stretching */
+    }
+  }
