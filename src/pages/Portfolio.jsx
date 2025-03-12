@@ -4,7 +4,6 @@ import SSAC from '../assets/SSAC.png';
 import empDB from '../assets/empDB2.jpg';
 import VBuilder from '../assets/VBuilder2.png';
 import RMG from '../assets/RMG.png';
-import gitWhite from '../assets/gitWhite.png';
 import bananaflix from '../assets/bananaFlix.jpg';
 import pilotLogo from '../assets/pilotLogo.png';
 import gBooks from '../assets/gBooks.jpg';
@@ -74,43 +73,39 @@ export default function Portfolio() {
       description: 'Console application that allows users to build and drive custom vehicles. Demonstrates object-oriented programming principles and inheritance structures.',
       githubLink: 'https://github.com/bmw-dev0p/Vehicle-Builder-Challenge8',
     },
-    {
-      title: 'Professional README Generator',
-      imgSrc: RMG,
-      description: 'Node.js application that generates professional README files for GitHub repositories. Features include user input validation, markdown formatting, built-in badges,  and file creation.',
-      githubLink: 'https://github.com/bmw-dev0p/README-Gen-Challenge7.2',
-    },
+    // {
+    //   title: 'Professional README Generator',
+    //   imgSrc: RMG,
+    //   description: 'Node.js application that generates professional README files for GitHub repositories. Features include user input validation, markdown formatting, built-in badges,  and file creation.',
+    //   githubLink: 'https://github.com/bmw-dev0p/README-Gen-Challenge7.2',
+    // },
   ];
 
   return (
-    <div className="bg">
-      <div className="container-fluid">  {/* Change to container-fluid */}
-        <h1 className="bigText" style={{ textAlign: 'center' }}><span className='purple'>&lt;Coding/&gt;</span> Project Portfolio</h1>
-        <div className="row ofCards">  {/* Center the row contents */}
-          {/* begin card map  */}
-          {projects.map((project, index) => (
-            <div className="col-lg-4 col-md-6 mb-4" key={index}>  {/* Adjust column classes */}
-              <div className="card custom-card" style={{ minWidth: '18rem' }}>  {/* Set minimum width */}
-                <img src={project.imgSrc} className="card-img-top" alt={project.title} />
-                <div className="card-body">
-                  <h5 className="card-title">{project.title}</h5>
-                  <p className="card-text">{project.description}</p>
-                  <div className="button-container">
-                    <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-                      <button className="button-85" role="button">Github</button>
-                    </a>
-                    {project.demoLink ?
-                      <a href={project.demoLink} target="_blank" rel="noopener noreferrer">
-                        <button className="button-85" role="button">Live Demo</button>
-                      </a>
-                      : null /* No demo link, so nothing is rendered here */
-                    }
-                  </div>
-                </div>
+    <div className="portfolio-container">
+      <h1 className="bigText">
+        <span className='purple'>&lt;Coding/&gt;</span> Projects
+      </h1>
+      <div className="cards-wrapper">
+        {projects.map((project, index) => (
+          <div className="card" key={index}>
+            <img src={project.imgSrc} alt={project.title} className="card-img" />
+            <div className="card-content">
+              <h2 className="card-title">{project.title}</h2>
+              <p className="card-description">{project.description}</p>
+              <div className="button-group">
+                <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                  <button className="button-85">GitHub</button>
+                </a>
+                {project.demoLink && (
+                  <a href={project.demoLink} target="_blank" rel="noopener noreferrer">
+                    <button className="button-85">Live Demo</button>
+                  </a>
+                )}
               </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </div>
   );

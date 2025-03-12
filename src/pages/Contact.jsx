@@ -12,7 +12,7 @@ export default function Contact() {
           </div>
           {/* Form Column */}
           <div className="col formCol">
-            <div className="card custom">
+            <div className="card-contact">
               <div className="card-header text-center">
                 <h2 className='bigText'>Contact <span className='purple'>&lt;Me/&gt;</span></h2>
               </div>

@@ -12,14 +12,6 @@ html {
     );
   }
   
-  .bg {
-      /* background-image: var(--image-gradient), url(../../assets/bg2.jpg); */
-      background-position: top center;
-      height: 125vh; 
-      padding-bottom: 30px !important;
-      padding-top: 30px !important;
-    }
-  
   h1, p {
     color: white;
   }
@@ -234,3 +226,15 @@ html {
     --fill-percentage: var(--percentage);
   }
 }
+
+/* mobile  */
+@media (max-width: 768px) {
+  .bigText {
+    font-size: 6vw;
+  }
+
+  .medText {
+    font-size: 4vw;
+  }
+}
+

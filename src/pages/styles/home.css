@@ -6,16 +6,6 @@ html {
   );
 }
 
-.bg {
-  background-position: center;
-  min-height: 100% !important;
-  height: auto !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 30px 0;
-}
-
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -23,7 +13,7 @@ html {
   max-width: 1200px;
   width: 90%;
   min-height: 100% !important;
-  height: auto !important;
+  /* height: auto !important; */
 }
 
 .heroBanner {
@@ -58,7 +48,7 @@ html {
 }
 
 .bigTextHome {
-  font-size: 2vw; /* Scales dynamically with screen width */
+  font-size: 250%; /* Scales dynamically with screen width */
   font-weight: 700;
   color: white;
 }
@@ -74,28 +64,37 @@ html {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1150px) {
   .heroBanner {
     flex-direction: column;
     text-align: center;
+    align-items: center;
+    flex-wrap: nowrap;
   }
 
-  .textCol,
-  .imageCol {
+  .textCol {
+    order: -1; /* Forces text to appear on top */
     flex: 1 1 100%;
     max-width: 100%;
   }
 
-  .bigTextHome {
+  .imageCol {
+    order: 1; /* Forces image to appear at the bottom */
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  /* .bigTextHome {
     font-size: 6vw;
   }
 
   .medTextHome {
     font-size: 4vw;
-  }
+  } */
 
   .coder {
-    max-height: 300px;
+    /* max-height: 400px; */
+    padding-top: 5%;
   }
 }
 
