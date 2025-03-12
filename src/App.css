@@ -8,14 +8,14 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed; /* Keeps it in place while scrolling */
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 
 @media (max-width: 768px) {
   body {
-    background-size: contain; /* Adjusts for mobile to fit properly */
+    /* background-size: contain; Adjusts for mobile to fit properly */
     background-position: top;
   }
 }

@@ -40,7 +40,8 @@ html, body {
   max-width: 600px;
 }
 
-.card {
+.card-contact {
+  width: 100% !important;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;

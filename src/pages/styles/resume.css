@@ -52,4 +52,15 @@ html {
     height: auto; /* Maintain aspect ratio */
     border-radius: 10px; /* Optional: Rounded corners */
   }
+
+  @media (max-width: 768px) {
+    .resume-images {
+      flex-direction: column; /* Stack images vertically */
+      gap: 20px; /* Add space between the images */
+    }
+  
+    .resume-img {
+      width: 90%; /* Each image takes up 100% of the container width */
+    }
+  }
   

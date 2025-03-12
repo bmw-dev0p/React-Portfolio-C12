@@ -4,34 +4,34 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    padding-right: 20px;
 }
 
 
 .nav-link{
     color: white !important;
     border-bottom: none !important;
-    font-size: 35px;
+    font-size: 23px;
     padding-left: 20px;
+    
 }
 .nav-tabs {
-    display: flex;
-    justify-content: flex-end; /* Aligns tabs to the right */
-    width: 100%;
-    padding: 10px 0;
-    flex-wrap: wrap;
-  }
-  
-  .nav-item {
-    flex: 0 1; /* Prevents nav items from stretching */
-    text-align: center;
-  }
-  
-  
+    border-bottom: none !important;
+    height: 100%;
+}
 
-  
+.nav-item {
+    height: 100%;
+    /* padding-right: 20px; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* padding: 0 20px; */
+}
 .nav-link.active {  
     
-    background-image: url(../assets/navActive.jpg);
+    /* background-image: url(../assets/navActive.jpg); */
+    background-color: #4d1b73 !important;
 }
 
 .nav-link.active:hover {
@@ -41,16 +41,29 @@
 .nav-link:hover {
     background-color: #A648DA !important;
 }
-/* mobile  */
-@media (max-width: 768px) {
+
+/* Mobile Styles */
+@media (max-width: 568px) {
+    .header {
+        justify-content: center; /* Center the nav on mobile */
+        /* flex-wrap:nowrap; */
+    }
+
     .nav-tabs {
-      justify-content: space-around; /* Distributes tabs evenly across small screens */
-      flex-wrap: nowrap; /* Ensures tabs stay in a single row */
-      overflow-x: auto; /* Allows horizontal scrolling if absolutely necessary */
+        width: 100%;
+        /* justify-content: space-around; Spread out across the screen */
     }
-  
+
     .nav-item {
-      flex: 1; /* Ensures tabs shrink/grow as needed */
-      min-width: auto; /* Prevents unnecessary stretching */
+        /* flex: 1 1 auto; Allow wrapping */
+        text-align: center;
     }
-  }
+
+    .nav-link {
+        font-size: 18px; /* Adjust size for mobile */
+        padding: 10px;
+        width: 100%; /* Ensure full-width links */
+        text-align: center; /* Center text on mobile */
+    }
+}
+
