@@ -1,12 +1,33 @@
 .footer-container {
   background-image: linear-gradient(to left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
-  /* background-size: cover; Ensures the background image covers the entire element */
-  /* background-repeat: no-repeat; */
   height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative; /* Ensure it's inside the flow */
+  width: 100%;
+  margin-top: auto; /* Pushes the footer down */
 }
+
+@media (max-width: 768px) {
+  .footer-container {
+    height: 50px;
+    padding: 20px 0;
+  }
+}
+
+/* Ensure the body takes up full viewport */
+html, body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensures content grows but pushes the footer to the bottom */
+#root {
+  flex-grow: 1;
+}
+    
 
 .footer {
   display: flex;

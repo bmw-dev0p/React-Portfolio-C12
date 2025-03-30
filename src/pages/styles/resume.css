@@ -11,14 +11,6 @@ html {
       rgba(12, 10, 22, 0.863)
     );
   }
-  
-  .bg {
-      /* background-image: var(--image-gradient), url(../../assets/bg2.jpg); */
-      background-position: top center;
-      height: 125vh; 
-      padding-bottom: 30px !important;
-      padding-top: 30px !important;
-    }
 
   h1, p {
     color: white;
@@ -59,5 +51,16 @@ html {
     width: 45%; /* Each image takes up 45% of the container width */
     height: auto; /* Maintain aspect ratio */
     border-radius: 10px; /* Optional: Rounded corners */
+  }
+
+  @media (max-width: 768px) {
+    .resume-images {
+      flex-direction: column; /* Stack images vertically */
+      gap: 20px; /* Add space between the images */
+    }
+  
+    .resume-img {
+      width: 90%; /* Each image takes up 100% of the container width */
+    }
   }
   
