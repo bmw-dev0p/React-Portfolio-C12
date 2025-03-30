@@ -8,6 +8,7 @@ import bananaflix from '../assets/bananaFlix.jpg';
 import pilotLogo from '../assets/pilotLogo.png';
 import gBooks from '../assets/gBooks.jpg';
 import kanban from '../assets/kanban.jpg';
+import knight from '../assets/knight.jpg';
 import './styles/portfolio.css';
 
 export default function Portfolio() {
@@ -18,6 +19,13 @@ export default function Portfolio() {
       description: 'Movie Database application that allows users to search, save, and rate movies. Features include ai chatbot movie recommendations, user authentication, dynamic rendering of movie data, and a responsive design.',
       githubLink: 'https://github.com/bmw-dev0p/BananaFlix',
       demoLink: 'https://bananaflix.onrender.com/',
+    },
+    {
+      title: 'ChessIQ',
+      imgSrc: knight,
+      description: 'Chess game with React and Node.js, featuring bot opponents powered by scaling difficulty algorithms — including heuristic move evaluation and a Minimax strategy — with built-in move tracking and game state management.',
+      githubLink: 'https://github.com/bmw-dev0p/Chess_vs_AI',
+      demoLink: 'https://chess-iq.netlify.app/',
     },
     {
       title: 'Project Pilot',
@@ -73,12 +81,12 @@ export default function Portfolio() {
       description: 'Console application that allows users to build and drive custom vehicles. Demonstrates object-oriented programming principles and inheritance structures.',
       githubLink: 'https://github.com/bmw-dev0p/Vehicle-Builder-Challenge8',
     },
-    // {
-    //   title: 'Professional README Generator',
-    //   imgSrc: RMG,
-    //   description: 'Node.js application that generates professional README files for GitHub repositories. Features include user input validation, markdown formatting, built-in badges,  and file creation.',
-    //   githubLink: 'https://github.com/bmw-dev0p/README-Gen-Challenge7.2',
-    // },
+    {
+      title: 'Professional README Generator',
+      imgSrc: RMG,
+      description: 'Node.js application that generates professional README files for GitHub repositories. Features include user input validation, markdown formatting, built-in badges,  and file creation.',
+      githubLink: 'https://github.com/bmw-dev0p/README-Gen-Challenge7.2',
+    },
   ];
 
   return (
