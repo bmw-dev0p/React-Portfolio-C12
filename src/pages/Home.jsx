@@ -12,18 +12,25 @@ export default function Home() {
             <h2 className="medTextHome">Hello, I'm</h2>
             <h1 className="bigTextHome"><span className="purple">&lt;Brad/&gt;</span> Webster</h1>
             <p className="medTextHome">
-              A passionate student studying to become a
-              
+              I'm a professional tradesman evolving into...
+
             </p>
             <h1 className="bigTextHome"><span className="purple">
-            <Typewriter
+              <Typewriter
                 options={{
-                  strings: ['Software Developer', 'Web Developer', 'React Developer', 'Full Stack Developer'],
+                  strings: [
+                    'Full-Stack Developer',
+                    'Frontend Engineer',
+                    'Backend Problem Solver',
+                    'API Specialist',
+                    'Security-Minded Coder',
+                    'Data-Driven Builder'
+                  ],
                   autoStart: true,
                   loop: true,
                 }}
               /></span>
-              </h1>
+            </h1>
           </div>
           {/* Image Column */}
           <div className="col imageCol">
