@@ -15,6 +15,7 @@ export default function Contact() {
             <div className="card-contact">
               <div className="card-header text-center">
                 <h2 className='bigText'>Contact <span className='purple'>&lt;Me/&gt;</span></h2>
+                <h2 className='medText'>bmw.dev0p@gmail.com</h2>
               </div>
               <div className="card-body">
                 <form>
