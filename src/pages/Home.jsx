@@ -23,6 +23,7 @@ export default function Home() {
                     'Frontend Engineer',
                     'Backend Problem Solver',
                     'API Specialist',
+                    'MERN Stack Developer',
                     'Security-Minded Coder',
                     'Data-Driven Builder'
                   ],
