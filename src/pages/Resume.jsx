@@ -1,7 +1,7 @@
 import './styles/resume.css';
 import resume1 from '../assets/resume1.jpg';
 import resume2 from '../assets/resume2.jpg';
-import resumePDF from '../assets/RESUME_2025.pdf';
+import resumePDF from '../assets/BradWebster_Resume2025.pdf';
 
 
 export default function Resume() {
