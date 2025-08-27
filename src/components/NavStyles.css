@@ -16,10 +16,17 @@
     
 }
 .nav-tabs {
-  white-space: nowrap;
-  overflow-x: auto; /* Allows horizontal scrolling if needed */
   display: flex;
-  flex-wrap: nowrap; /* Prevent line breaks */
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;         /* ✨ Prevent vertical scrollbar */
+  -ms-overflow-style: none;   /* ✨ Hide scrollbar for IE and Edge */
+  scrollbar-width: none;      /* ✨ Hide scrollbar for Firefox */
+}
+
+.nav-tabs::-webkit-scrollbar {
+  display: none;              /* ✨ Hide scrollbar for Chrome, Safari */
 }
 
 

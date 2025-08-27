@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './styles/about.css';
-import self from '../assets/selfplosion.png';
+import self from '../assets/self.jpg';
 
 // Function to load GitHub contributions graph and streak stats
 function GitHubGraphs() {

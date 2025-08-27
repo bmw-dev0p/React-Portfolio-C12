@@ -24,10 +24,15 @@ html {
   }
   
   
-  .self {
-    height: 50vh;
-    padding-left: 50px;
-  }
+ .self {
+  height: 50vh;
+  width: 50vh;
+  border-radius: 50%;
+  object-fit: cover;
+  padding: 4px;
+  background: linear-gradient(135deg, rebeccapurple, #A648DA);
+  box-shadow: 0 0 10px rgba(166, 72, 218, 0.5);
+}
   
   .medText {
     font-size: 20px;
@@ -235,6 +240,11 @@ html {
 
   .medText {
     font-size: 4vw;
+  }
+
+  .self {
+    margin: 0 auto;
+    display: block;
   }
 }
 
