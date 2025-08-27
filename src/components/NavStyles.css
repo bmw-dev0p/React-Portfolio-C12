@@ -16,9 +16,12 @@
     
 }
 .nav-tabs {
-    border-bottom: none !important;
-    height: 100%;
+  white-space: nowrap;
+  overflow-x: auto; /* Allows horizontal scrolling if needed */
+  display: flex;
+  flex-wrap: nowrap; /* Prevent line breaks */
 }
+
 
 .nav-item {
     height: 100%;
@@ -50,9 +53,8 @@
     }
 
     .nav-tabs {
-        width: 100%;
-        /* justify-content: space-around; Spread out across the screen */
-    }
+    justify-content: space-evenly; /* Keeps them centered and spaced */
+  }
 
     .nav-item {
         /* flex: 1 1 auto; Allow wrapping */
@@ -60,10 +62,9 @@
     }
 
     .nav-link {
-        font-size: 18px; /* Adjust size for mobile */
-        padding: 10px;
-        width: 100%; /* Ensure full-width links */
-        text-align: center; /* Center text on mobile */
-    }
+    padding: 8px 10px; /* Was: 10px and 20px — reduce left/right padding */
+    font-size: 16px; /* Optional: scale down just a bit */
+    white-space: nowrap; /* Critical to prevent breaking */
+  }
 }
 
