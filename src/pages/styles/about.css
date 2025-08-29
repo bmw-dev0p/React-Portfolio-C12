@@ -122,30 +122,31 @@ html {
 
 /* SKILL CIRCLES */
 .skill-circles {
-  margin-top: 40px; /* Increase the margin on top */
-  margin-bottom: 40px; /* Add margin on bottom */
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .skill-circle {
-  margin-bottom: 60px; /* Increase the margin on bottom */
+  margin-bottom: 40px;
   text-align: center;
 }
 
+/* Circle container */
 .circle {
-  width: 200px; /* Increase the width */
-  height: 200px; /* Increase the height */
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
-  background: conic-gradient(#4CAF50 0% 0%, #4CAF50 0% var(--fill-percentage), #333 var(--fill-percentage) 100%);
+  background: conic-gradient(
+    #4CAF50 0% 0%,
+    #4CAF50 0% var(--fill-percentage),
+    #333 var(--fill-percentage) 100%
+  );
   margin: 0 auto;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   animation: fillCircle 2s ease-out forwards;
-  /* --fill-percentage: 0%; */
 }
 
 .circle::after {
@@ -153,8 +154,8 @@ html {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 85%;
-  height: 85%;
+  width: 80%;   /* inner hollow area */
+  height: 80%;
   border-radius: 50%;
   background: #111;
   transform: translate(-50%, -50%);
@@ -164,73 +165,31 @@ html {
 .percentage {
   position: absolute;
   color: white;
-  font-size: 18px;
+  font-size: 16px;
   z-index: 2;
 }
 
 .framework-label {
   color: white;
   position: absolute;
-  bottom: -25px;
+  bottom: -20px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 16px;
+  font-size: 14px;
   z-index: 2;
 }
 
+/* Smooth fill animation */
 @keyframes fillCircle {
-  0% {
+  from {
     --fill-percentage: 0%;
   }
-  6.25% {
-    --fill-percentage: calc(var(--percentage) / 16);
-  }
-  12.5% {
-    --fill-percentage: calc(var(--percentage) / 8);
-  }
-  18.75% {
-    --fill-percentage: calc(var(--percentage) * 0.1875);
-  }
-  25% {
-    --fill-percentage: calc(var(--percentage) / 4);
-  }
-  31.25% {
-    --fill-percentage: calc(var(--percentage) * 0.3125);
-  }
-  37.5% {
-    --fill-percentage: calc(var(--percentage) * 0.375);
-  }
-  43.75% {
-    --fill-percentage: calc(var(--percentage) * 0.4375);
-  }
-  50% {
-    --fill-percentage: calc(var(--percentage) / 2);
-  }
-  56.25% {
-    --fill-percentage: calc(var(--percentage) * 0.5625);
-  }
-  62.5% {
-    --fill-percentage: calc(var(--percentage) * 0.625);
-  }
-  68.75% {
-    --fill-percentage: calc(var(--percentage) * 0.6875);
-  }
-  75% {
-    --fill-percentage: calc(var(--percentage) * 0.75);
-  }
-  81.25% {
-    --fill-percentage: calc(var(--percentage) * 0.8125);
-  }
-  87.5% {
-    --fill-percentage: calc(var(--percentage) * 0.875);
-  }
-  93.75% {
-    --fill-percentage: calc(var(--percentage) * 0.9375);
-  }
-  100% {
+  to {
     --fill-percentage: var(--percentage);
   }
 }
+
+
 
 /* mobile  */
 @media (max-width: 768px) {
@@ -246,5 +205,9 @@ html {
     margin: 0 auto;
     display: block;
   }
+
+  
 }
+
+
 

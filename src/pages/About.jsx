@@ -55,11 +55,17 @@ function SkillBarsAndCircles() {
   ];
 
   const codingFrameworks = [
-    { name: 'React', percentage: 70 },
+    { name: 'React', percentage: 80 },
     { name: 'Node.js', percentage: 85 },
-    { name: 'Express', percentage: 65 },
-    { name: 'AI', percentage: 50 },
+    { name: 'Express.js', percentage: 75 },
+    { name: 'GraphQL', percentage: 65 },
+    { name: 'MongoDB', percentage: 70 },
+    { name: 'PostgreSQL', percentage: 60 },
+    { name: 'Cypress/Vitest', percentage: 70 },
+    { name: 'CI/CD (Netlify/Render)', percentage: 65 },
+    { name: 'Security (JWT/bcrypt)', percentage: 75 },
   ];
+
 
   return (
     <div className="row skill-row">
@@ -81,7 +87,7 @@ function SkillBarsAndCircles() {
         <div className="skill-circles">
           <div className="row">
             {codingFrameworks.map((framework, index) => (
-              <div key={index} className="col-md-6">
+              <div key={index} className="col-6 col-md-4">
                 <div className="skill-circle">
                   <div className="circle" style={{ '--percentage': `${framework.percentage}%` }}>
                     <span className="percentage">{framework.percentage}%</span>
@@ -90,6 +96,7 @@ function SkillBarsAndCircles() {
                 </div>
               </div>
             ))}
+
           </div>
         </div>
       </div>
@@ -109,13 +116,9 @@ export default function About() {
             <h2 className='medText'>Brad Webster</h2>
             <h1 className='bigText'>I <span className='purple'>&lt;am.../&gt;</span></h1>
             <p>
-              I’m a student software developer with a growing skill set.. I’ve dived into the world of coding through university, coding bootcamps, and self-taught lessons. I have experience with HTML, CSS, and JavaScript, and I’m excited to continue exploring with TypeScript, Node.js, and React.
+              I’m a student software developer with a growing skill set. My journey began with a curiosity about how electronics work, taking apart mobile phones and building desktop PCs. That curiosity evolved into a passion for creating intuitive and dynamic applications. I thrive on solving problems and am always eager to learn new technologies and best practices.
               <br />
-              My journey started with a curiosity about how electronics work, taking apart mobile phones and building desktop PCs. It quickly evolved into a full-blown passion for creating intuitive and dynamic applications. I thrive on solving problems and am always eager to learn new technologies and best practices.
-              <br />
-              When I’m not coding, you can find me experimenting with new projects, collaborating with fellow developers, or simply exploring innovative tech solutions. I’m looking forward to contributing my skills to meaningful projects and growing as a developer in this ever-evolving field.
-              <br />
-              Feel free to browse through my portfolio to see some of the work I’ve done and get in touch if you’d like to collaborate or chat about technology!
+              When I’m not coding, you can find me experimenting with new projects, collaborating with fellow developers, or exploring innovative tech solutions. I’m excited to contribute my skills to meaningful projects and continue growing as a developer in this ever-evolving field.
             </p>
           </div>
           <div className="col-lg-6 mb-4 d-flex justify-content-center">
